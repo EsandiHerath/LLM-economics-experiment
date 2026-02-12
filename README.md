@@ -1,16 +1,5 @@
 LLM-economics-experiment
 
-LLM-economics-experiment/
-│
-├── src/                 # React frontend
-├── backend/             # FastAPI backend
-│   ├── main.py
-│   ├── experiment.py
-│   ├── models.py
-│   └── requirements.txt
-│
-└── README.md
-
 How to Run Backend
 
 cd backend
