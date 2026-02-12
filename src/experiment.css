@@ -1,0 +1,265 @@
+/* Page */
+.exp-page {
+  height: 100vh;
+  background: #0f0f12;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Top blue header bar */
+.exp-header {
+  background: #0a2bdc;
+  color: #fff;
+  padding: 14px 18px;
+  font-weight: 700;
+}
+
+.exp-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Body layout: sidebar + main */
+.exp-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+/* Sidebar */
+.exp-sidebar {
+  background: #aeb0ff;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-sidebar-title {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #10102a;
+}
+
+.exp-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-nav-item {
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 8px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #10102a;
+}
+
+.exp-nav-item.active {
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+}
+
+/* Main */
+.exp-main {
+  display: flex;
+}
+
+.exp-card {
+  background: #ffffff;
+  width: 100%;
+  border-radius: 2px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3-column grid inside the white card */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Sections */
+.exp-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1b1b1f;
+}
+
+.exp-muted {
+  font-size: 11px;
+  color: #6a6a73;
+  margin-top: 2px;
+}
+
+/* Checkbox row (One-shot rounds) */
+.exp-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.exp-check input {
+  margin-top: 3px;
+}
+
+.exp-check-title {
+  font-weight: 600;
+}
+
+/* Radio items */
+.exp-radio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+/* Slider */
+.exp-slider-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.exp-slider-row input[type="range"] {
+  width: 100%;
+}
+
+.exp-pill {
+  font-size: 11px;
+  padding: 4px 8px;
+  border: 1px solid #d7d7dd;
+  border-radius: 999px;
+  min-width: 44px;
+  text-align: center;
+}
+
+/* Select */
+.exp-select {
+  width: 220px;
+  padding: 8px 10px;
+  border: 1px solid #d7d7dd;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Prompt boxes */
+.exp-prompt-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-prompt-label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.exp-textarea {
+  width: 100%;
+  min-height: 78px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #d7d7dd;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Bottom actions */
+.exp-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.run-btn {
+  background: #1b1b1f;
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.run-btn:hover {
+  opacity: 0.92;
+}
+
+/* Live Round Monitor centre content */
+.lrm-center {
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lrm-title {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #1b1b1f;
+}
+
+.lrm-list {
+  font-size: 12px;
+  color: #6a6a73;
+  margin: 0 0 18px 0;
+  padding-left: 18px; /* bullet indent */
+  line-height: 1.9;
+}
+
+/* Results table wrapper (allows horizontal scroll if needed) */
+.ram-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table styling similar to screenshot */
+.ram-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  color: #1b1b1f;
+  white-space: nowrap;
+}
+
+.ram-table thead th {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  color: #6a6a73;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ececf2;
+}
+
+.ram-table tbody td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f1f1f6;
+}
+
+.ram-table tbody tr:hover {
+  background: #fafafe;
+}
+
+.ram-model {
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
